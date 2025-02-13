@@ -658,7 +658,9 @@ section.effect-bullets {
         max-width: 100%;
         text-align: center;
     }
-
+    .longevity-row h2{
+        margin-bottom: 20px;
+    }
     .longevity-bullets .longevity__benefits .longevity-benefits__item p {
         font-size: 13px;
         margin-bottom: 15px;
@@ -889,7 +891,7 @@ section.effect-bullets {
     }
 
     .cta-banner h2 {
-        font-size: 15px;
+        font-size: 18px;
         margin-bottom: 20px;
         line-height: 1.3em;
     }
