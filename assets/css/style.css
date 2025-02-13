@@ -881,6 +881,7 @@ section.effect-bullets {
 
     .cta-banner .discover-button {
         font-size: 14px;
+        padding: 10px;
     }
 
     .cta-banner img {
@@ -892,9 +893,7 @@ section.effect-bullets {
         margin-bottom: 20px;
         line-height: 1.3em;
     }
-    .cta-banner .discover-button{
-        padding: 10px;
-    }
+
     .last-cta-banner .last-cta__text {
         transform: translate(50%, 50%);
         top: 0%;
