@@ -49,7 +49,6 @@ h5 {
 h1 {
     color: #fff;
     font-size: 2.8vw;
-    margin-bottom: 1vw;
 }
 
 h2 {
@@ -283,6 +282,7 @@ section.effect-bullets {
 
 .how-works-senolytic h2 {
     margin-bottom: 5vw;
+    margin-left: -8vw;
 }
 
 .how-works-section__text {
