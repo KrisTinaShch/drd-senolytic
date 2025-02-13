@@ -905,7 +905,9 @@ section.effect-bullets {
         font-size: 18px;
         text-align: left;
     }
-
+    .antiage-list_container li::marker{
+        color: transparent;
+    }
 
     .on-mobile {
         display: block;
