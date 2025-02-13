@@ -1,0 +1,987 @@
+:root {
+    --main-yellow: #f57e25;
+    --main-red: #D03D41;
+}
+
+@font-face {
+    font-family: 'Alethia';
+    src: url('../fonts/Alethiaproregular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Medium';
+    src: url('../fonts/OpenSans-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Alethia', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.8vw;
+    margin-bottom: 1vw;
+}
+
+h2 {
+    font-size: 2.8vw;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-size: 2.2vw;
+}
+
+h4 {
+    font-size: 2.5vw;
+}
+
+
+p {
+    font-size: 1vw;
+    line-height: 1.3em;
+    letter-spacing: 0.5px;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-4 {
+    max-width: 20%;
+}
+
+.col-6 {
+    max-width: 50%;
+}
+
+.col-8 {
+    max-width: 80%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* hero */
+.hero-section {
+    color: #fff;
+}
+
+.hero-section .hero-section__text h4 {
+    text-transform: lowercase;
+}
+
+.hero-section .hero-section__text p {
+    margin-top: 3vw;
+    color: #000;
+    background: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 65%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero-section img {
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero-section .hero-section__text {
+    position: absolute;
+    transform: translate(-50%, 5%);
+    top: 0%;
+    right: -15%;
+    max-width: 45%;
+}
+
+.hero-section .hero-section__text .hero-section__logo {
+    margin-bottom: 6vw;
+    margin-top: 2vh;
+    max-width: 6vw;
+}
+
+/* Effect */
+section.effect-bullets {
+    padding: 3vw 0 20px 0;
+}
+
+.effect-bullets .container {
+    flex-direction: column;
+}
+
+.effect-bullets {
+    background: var(--main-yellow);
+    color: #fff;
+}
+
+.bullets-list__container {
+    padding: 1vw 12vw;
+    text-align: center;
+}
+
+.bullets-list__container .bullets-list__item {
+    position: relative;
+    margin: 2vw 0;
+}
+
+.bullets-list__container .bullets-list__item p {
+    padding-left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 47px;
+}
+
+.bullets-list__container .bullets-list__item span {
+    position: absolute;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5vw;
+    height: 1.5vw;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.bullets-list__container .bullets-list__item span.first {
+    left: 0%;
+}
+
+.bullets-list__container .bullets-list__item span.second {
+    left: -10%;
+}
+
+.bullets-list__container .bullets-list__item span.third {
+    left: -5%;
+}
+
+.bullets-list__container .bullets-list__item span.four {
+    left: 2%;
+}
+
+.bullets-list__container .bullets-list__item span.five {
+    left: 10%;
+}
+
+.bullets-list__container .bullets-list__item span::after {
+    content: "x";
+    color: var(--main-yellow);
+    font-weight: 900;
+    font-size: 1.5vw;
+    margin-top: -5px;
+}
+
+.effect-bullets .effect-bullets__arrow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2vw;
+}
+
+.effect-bullets .effect-bullets__arrow img {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+/* longevity */
+.longevity {
+    background: var(--main-yellow);
+    color: #fff;
+}
+
+.longevity-row {
+    max-width: 60%;
+    text-align: center;
+}
+
+.longevity-row p {
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+
+/* longevity bullets*/
+.longevity-bullets {
+    position: relative;
+}
+
+.longevity-section__text {
+    position: absolute;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    left: 35%;
+    max-width: 50%;
+}
+
+.longevity-bullets .longevity__benefits .longevity-benefits__item span::before {
+    content: '';
+    width: 2vw;
+    height: 2vw;
+    left: -3vw;
+    position: absolute;
+    background: url(../images/SVG/checkmark-02.png) right 0 / 100% no-repeat;
+
+}
+
+.longevity-bullets .longevity__benefits .longevity-benefits__item p {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.9vw;
+    margin-bottom: 1.5vw;
+    padding-top: 0.5vw;
+}
+
+
+/* how works senolytic */
+.how-works-senolytic {
+    margin-top: -10px;
+    position: relative;
+}
+
+.how-works-senolytic h2 {
+    margin-bottom: 5vw;
+}
+
+.how-works-section__text {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    max-width: 60%;
+}
+
+.how-works-section__text p {
+    position: relative;
+    max-width: 75%;
+    margin-top: 5%;
+    padding-left: 25%;
+}
+
+.how-works-section__text p.first-line::before,
+.how-works-section__text p.second-line::before,
+.how-works-section__text p.third-line::before {
+    content: '';
+    position: absolute;
+    background: #000;
+    height: 1px;
+}
+
+.how-works-section__text p.first-line::after,
+.how-works-section__text p.second-line::after,
+.how-works-section__text p.third-line::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.how-works-section__text p.first-line::before {
+    left: 8%;
+    top: 13%;
+    width: 11vw;
+}
+
+.how-works-section__text p.second-line::before {
+    left: -10%;
+    top: 20%;
+    width: 19vw;
+}
+
+.how-works-section__text p.third-line::before {
+    left: 8%;
+    top: 17%;
+    width: 11vw;
+}
+
+.how-works-section__text p.first-line::after {
+    left: 8%;
+    top: 8%;
+}
+
+.how-works-section__text p.second-line::after {
+    left: -10%;
+    top: 12%;
+}
+
+.how-works-section__text p.third-line::after {
+    left: 8%;
+    top: 12%;
+}
+
+.how-works-senolytic .how-works-section__text .discover-button {
+    max-width: fit-content;
+    padding: 0.8vw 2vw;
+    margin-left: 25%;
+    margin-top: 8%;
+}
+
+.discover-button {
+    background: var(--main-yellow);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+/* antiage */
+.antiage {
+    padding: 3vw 0;
+}
+
+.antiage .row {
+    display: flex;
+    align-items: center;
+}
+
+.antiage .row p.antiage-subtitle {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 3vw;
+}
+
+.antiage-list_container li {
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    color: var(--main-yellow);
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    font-weight: bold;
+    list-style: disc;
+    margin-left: 1.2vw;
+}
+
+.antiage-list_container li::marker {
+    color: #000;
+
+}
+
+/* BENEFITS */
+
+.what-you-get {
+    color: #fff;
+    position: relative;
+}
+
+.what-you-get .you-get__text {
+    position: absolute;
+    top: 0;
+    max-width: 45%;
+    transform: translate(50%, -50%);
+    top: 45%;
+    right: 35%;
+}
+
+.what-you-get .you-get__text p {
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px 1vw;
+    border-radius: 10px;
+    margin: 1vw 0;
+    font-weight: bold;
+    max-width: 70%;
+}
+
+.what-you-get .discover-button {
+    margin-top: 3vw;
+    max-width: fit-content;
+    padding: 1vw 2vw;
+    background: #000;
+}
+
+/* drd creator */
+.drd-creator {
+    padding: 5vw 0;
+    background: #FEF2E9;
+}
+
+.drd-creator .rightside p {
+    margin-bottom: 1vw;
+}
+
+.drd-creator .leftside img {
+    padding: 3vw;
+}
+
+.on-mobile {
+    display: none;
+}
+
+.cta-banner {
+    padding: 1vw 0;
+    background: var(--main-yellow);
+    color: #fff;
+}
+
+.cta-banner h2 {
+    margin-bottom: 2vw;
+}
+
+.cta-banner img {
+    margin-top: -3vw;
+}
+
+.cta-banner .discover-button {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 1vw 2vw;
+}
+
+.last-cta-banner {
+    position: relative;
+}
+
+.last-cta-banner .last-cta__text {
+    position: absolute;
+    transform: translate(50%, 50%);
+    top: 25%;
+    left: 35%;
+    max-width: 36%;
+    color: #fff;
+}
+
+/* Last cta */
+
+@media (max-width: 768px) {
+    p {
+        font-size: 10px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .hero-section .hero-section__text .hero-section__logo {
+        margin-bottom: 15px;
+    }
+
+    .bullets-list__container .bullets-list__item span::after {
+        margin-top: -2px;
+    }
+
+    .bullets-list__container .bullets-list__item p {
+        padding-left: 50px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 21px;
+    }
+
+
+    .benefits-list__item {
+        list-style: disc;
+        margin-bottom: 12px;
+        max-width: 100%;
+    }
+
+    .body-benefits .rightside div {
+        top: 54%;
+    }
+
+    .body-benefits .rightside div::before {
+        left: 96%;
+        margin-top: -47%;
+    }
+
+    .what-you-get .you-get__text p {
+        padding: 5px 10px;
+        margin: 8px 0;
+        max-width: 90%;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 25px;
+        margin-top: 0%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 1.3em;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 20px;
+        text-transform: lowercase;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .col-6 {
+        max-width: 100%;
+    }
+
+    .col-4,
+    .col-8 {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hero-section .hero-section__text {
+        position: absolute;
+        transform: translate(0%, 0%);
+        top: 0%;
+        left: 0;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .hero-section .hero-section__text .hero-section__logo {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        max-width: 105px;
+    }
+
+    section.effect-bullets {
+        padding: 30px 0 15px 0;
+    }
+
+    .effect-bullets h2 {
+        margin-top: 0;
+    }
+
+    .effect-bullets p.white-container {
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        padding: 20px 10px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    .effect-bullets .effect-bullets__arrow {
+        margin-top: 15px;
+    }
+
+    .effect-bullets .effect-bullets__arrow img {
+        max-width: 55%;
+    }
+
+    .effect-bullets .arrow {
+        max-width: 35px;
+        margin: 0 auto 35px auto;
+    }
+
+    .bullets-list__container {
+        padding: 0 25px;
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    .bullets-list__container .bullets-list__item span.first,
+    .bullets-list__container .bullets-list__item span.second,
+    .bullets-list__container .bullets-list__item span.third,
+    .bullets-list__container .bullets-list__item span.four,
+    .bullets-list__container .bullets-list__item span.five {
+        left: 0;
+    }
+
+    .bullets-list__container .bullets-list__item span {
+        width: 25px;
+        height: 25px;
+    }
+
+    .bullets-list__container .bullets-list__item span::after {
+        content: "x";
+        color: var(--main-yellow);
+        font-weight: 900;
+        font-size: 19px;
+        margin-top: -2px;
+    }
+
+    .longevity-row {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .longevity-bullets .longevity__benefits .longevity-benefits__item p {
+        font-size: 13px;
+        margin-bottom: 15px;
+        padding-top: 0px;
+    }
+
+    .longevity-section__text {
+        position: absolute;
+        top: 61%;
+        transform: translate(0%, 0%);
+        left: 20%;
+        max-width: 70%;
+    }
+
+    .longevity-bullets .longevity__benefits .longevity-benefits__item span::before {
+        width: 19px;
+        height: 20px;
+        left: -27px;
+    }
+
+    .how-works-senolytic {
+        position: relative;
+    }
+
+
+    .how-works-section__text p {
+        position: absolute;
+    }
+
+    .what-you-get .you-get__text {
+        max-width: 50%;
+        transform: none;
+        top: 28%;
+        right: 0%;
+    }
+
+    .what-you-get .you-get__text p {
+        padding: 5px 8px;
+        margin: 6px 0;
+        max-width: 100%;
+        border-radius: 10px 0 0 10px;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .what-you-get .you-get__text h2 {
+        position: absolute;
+        top: -40%;
+        left: 0%;
+        transform: translate(-40%, 50%);
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+    .how-works-section__text {
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        max-width: 100%;
+        height: 90%;
+    }
+
+    .how-works-senolytic {
+        margin-top: 0;
+    }
+
+    .how-works-senolytic h2 {
+        text-align: center;
+        padding: 0 70px;
+    }
+
+    .how-works-section__text p.first-line {
+        left: -11%;
+    }
+
+    .how-works-section__text p.second-line {
+        top: 25%;
+        left: 20%;
+        max-width: 65%;
+    }
+
+    .how-works-section__text p.third-line {
+        top: 70%;
+        left: -20%;
+        text-align: right;
+    }
+
+    .how-works-section__text p.first-line::before {
+        left: auto;
+        right: 71%;
+        top: 5%;
+        height: 17em;
+        width: 1px;
+    }
+
+    .how-works-section__text p.first-line::after {
+        left: auto;
+        right: 69.4%;
+        top: 14rem;
+    }
+
+    .how-works-section__text p.second-line::before {
+        left: 32%;
+        top: 5%;
+        height: 142px;
+        width: 1px;
+    }
+
+    .how-works-section__text p.second-line::after {
+        left: 30.5%;
+        top: 9rem;
+    }
+
+    .how-works-section__text p.third-line::before {
+        left: auto;
+        right: -6%;
+        top: 9%;
+        width: 1px;
+        height: 90px;
+    }
+
+    .how-works-section__text p.third-line::after {
+        right: -7.3%;
+        top: 7em;
+        left: auto;
+    }
+
+    .how-works-senolytic .how-works-section__text .discover-button {
+        position: absolute;
+        top: 95%;
+        left: 38%;
+        transform: translate(-32%, -50%);
+        padding: 10px 20px;
+        margin-left: 0;
+    }
+
+    .discover-button {
+        font-size: 25px;
+    }
+
+    .antiage {
+        padding: 80px 0px 45px;
+    }
+
+    .antiage .row {
+        flex-direction: column-reverse;
+    }
+
+    .antiage h2 {
+        text-align: center;
+    }
+
+    .antiage .row p.antiage-subtitle {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .antiage .row p {
+        text-align: center;
+    }
+
+    .antiage-list_container li {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        margin-left: 18px;
+        line-height: 1.2em;
+    }
+
+    .drd-creator {
+        padding: 0;
+    }
+
+    .drd-creator .cta-button {
+        width: 100%;
+        background: #000;
+        color: #fff;
+        padding: 20px 0;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+
+    .drd-creator .drd-creator-title {
+        margin: 0;
+    }
+
+    .drd-creator .drd-creator-title h2 {
+        margin-top: 35px;
+        text-align: center;
+        margin: 35px auto;
+    }
+
+    .drd-creator .rightside {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .drd-creator .rightside p {
+        margin-bottom: 14px;
+    }
+
+    .drd-creator .container {
+        max-width: 100%;
+    }
+
+    .cta-banner .container {
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 0 3px 0;
+    }
+
+    .cta-banner .discover-button {
+        font-size: 14px;
+    }
+
+    .cta-banner img {
+        margin-top: -25px;
+    }
+
+    .cta-banner h2 {
+        font-size: 15px;
+        margin-bottom: 20px;
+        line-height: 1.3em;
+    }
+
+    .last-cta-banner .last-cta__text {
+        transform: translate(50%, 50%);
+        top: 0%;
+        left: 40%;
+        max-width: 35%;
+    }
+
+    .last-cta-banner .last-cta__text h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+
+    .on-mobile {
+        display: block;
+    }
+
+    .on-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 385px) {
+    .how-works-section__text p.second-line {
+        top: 27%;
+        left: 20%;
+        max-width: 76%;
+    }
+
+    .how-works-section__text p.second-line::before {
+        left: 29%;
+    }
+
+    .how-works-section__text p.second-line::after {
+        left: 27.5%;
+    }
+
+    .how-works-section__text p.first-line {
+        max-width: 85%;
+    }
+
+    .how-works-section__text p.first-line::before {
+        right: 75%;
+        height: 15em;
+    }
+
+    .how-works-section__text p.first-line::after {
+        right: 73.6%;
+        top: 12rem;
+    }
+
+    .discover-button {
+        font-size: 20px;
+    }
+
+    .how-works-senolytic .how-works-section__text .discover-button {
+        left: 42%;
+    }
+
+    .what-you-get .you-get__text p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 348px) {
+    .how-works-section__text p.third-line {
+        top: 70%;
+        left: -16%;
+        text-align: right;
+        max-width: 83%;
+    }
+
+    .how-works-section__text p.third-line::before {
+        top: 5%;
+    }
+
+    .how-works-section__text p.first-line {
+        top: 9%;
+    }
+
+    .how-works-senolytic .how-works-section__text .discover-button {
+        top: 95%;
+        left: 35%;
+        transform: translate(-23%, -50%);
+    }
+    .what-you-get .you-get__text {
+        top: 13%;
+    }    
+    .what-you-get .you-get__text h2 {
+        top: -19%;
+    }
+}
